@@ -270,3 +270,151 @@ body {
         transform: translateY(-5px);
     }
 }
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c0 100%);
+    }
+
+    .tree-container {
+        right: 50%;
+        transform: translateX(50%);
+        width: 280px;
+        height: 320px;
+        bottom: 0;
+    }
+
+    .message-box {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 45%;
+        max-width: 85%;
+        padding: 30px 25px;
+    }
+
+    .message-box.show {
+        transform: translate(-50%, -50%);
+    }
+
+    .message-box h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .message-box p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .signature {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .timer {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .timer strong {
+        font-size: 18px;
+    }
+
+    .initial-heart {
+        width: 120px;
+        height: 120px;
+    }
+
+    .initial-heart:before,
+    .initial-heart:after {
+        width: 60px;
+        height: 96px;
+        border-radius: 60px 60px 0 0;
+    }
+
+    .initial-heart:before {
+        left: 60px;
+    }
+
+    .heart-text {
+        font-size: 20px;
+    }
+
+    .valentine-message {
+        padding: 20px 30px;
+        max-width: 90%;
+    }
+
+    .valentine-message h2 {
+        font-size: 24px;
+    }
+
+    .valentine-message::before,
+    .valentine-message::after {
+        font-size: 24px;
+        top: -12px;
+    }
+
+    .falling-heart {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tree-container {
+        width: 220px;
+        height: 260px;
+    }
+
+    .message-box {
+        max-width: 90%;
+        padding: 25px 20px;
+    }
+
+    .message-box h1 {
+        font-size: 20px;
+    }
+
+    .message-box p {
+        font-size: 16px;
+    }
+
+    .signature {
+        font-size: 18px;
+    }
+
+    .timer {
+        font-size: 14px;
+    }
+
+    .timer strong {
+        font-size: 16px;
+    }
+
+    .initial-heart {
+        width: 100px;
+        height: 100px;
+    }
+
+    .initial-heart:before,
+    .initial-heart:after {
+        width: 50px;
+        height: 80px;
+        border-radius: 50px 50px 0 0;
+    }
+
+    .initial-heart:before {
+        left: 50px;
+    }
+
+    .valentine-message h2 {
+        font-size: 20px;
+    }
+
+    .valentine-message::before,
+    .valentine-message::after {
+        font-size: 20px;
+    }
+}
